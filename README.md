@@ -32,7 +32,9 @@ Las nueve pruebas pasaron antes y después del cambio. Además, comprobé que la
 
 La configuración de Vercel está en `vercel.json`. Se debe importar la rama `main` del repositorio de GitHub y elegir la carpeta que contiene `package.json` como raíz. El proyecto usa el preset Vite, el comando `npm run build` y el directorio de salida `dist`. La regla para `/criptomonedas/:id` permite abrir y recargar un detalle directamente.
 
-**URL pública en Vercel:** pendiente de publicación.
+**Aplicación publicada:** https://pulso-abierto-seven.vercel.app
+
+**Repositorio:** https://github.com/sisalucas97-web/pulso-abierto
 
 ## Verificación final
 
@@ -44,4 +46,4 @@ La configuración de Vercel está en `vercel.json`. Se debe importar la rama `ma
 | Build | TypeScript y Vite finalizaron correctamente. Se generó `dist/index.html` con sus archivos JavaScript y CSS. |
 | API | CoinGecko devolvió HTTP 200 y precios numéricos para las tres monedas. También se observó el límite temporal de consultas (HTTP 429). |
 | Preview | Se ejecutó `npm run preview`. En Chromium, a 390 y 1440 px de ancho, se validó el formulario vacío, se consultaron los tres precios y se recorrió listado → detalle → recarga → listado. El favorito se conservó y el filtro mostró una sola moneda. Se comprobó que no hubiera desbordamiento horizontal en el listado ni errores de consola durante estos recorridos con una respuesta real guardada de la API. |
-| Despliegue | Pendiente del push a GitHub, la publicación en Vercel y la comprobación desde la URL pública. |
+| Despliegue | Versión publicada en producción. La página principal cargó desde el dominio público y se consultaron las tres cotizaciones. El despliegue se realizó desde los archivos del proyecto. Queda pendiente vincular el repositorio para futuras publicaciones automáticas. |
